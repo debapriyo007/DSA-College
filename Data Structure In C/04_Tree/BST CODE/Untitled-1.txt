@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+struct node 
+{
+    struct node *left;
+    int data;
+    struct node *right;
+}*root =NULL;
+
+
+struct node *insert(int key)
+{
+    struct node *p =root;
+    struct node *q;
+
+    if(root== NULL)
+    {
+        q=(struct node *)malloc(sizeof(struct node));
+        q->left=q->right = NULL;
+        q->data= key;
+        root = q;
+        return ;
+
+    }
+    
+}
